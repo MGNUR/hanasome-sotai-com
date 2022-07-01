@@ -6,7 +6,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-6 leading-8;
 }
 
 .markdown h1 {
@@ -19,4 +19,16 @@
 
 .markdown h3 {
   @apply text-2xl font-bold mt-8 mb-4 leading-snug;
+}
+
+.markdown ul {
+  @apply list-disc pl-8;
+}
+
+.markdown ol {
+  @apply list-decimal pl-8;
+}
+
+.markdown a {
+  @apply text-blue-500;
 }
