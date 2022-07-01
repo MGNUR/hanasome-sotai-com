@@ -70,7 +70,6 @@ const Index = ({ allPosts }: Props) => {
           <p className="text-lg leading-relaxed mb-8 text-right mx-20">
             ――シモーユ・ヴェイヌ
           </p>
-          {posts.length > 0 && <MoreStories posts={posts} />}
         </Container>
       </Layout>
     </>
