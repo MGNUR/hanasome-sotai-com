@@ -10,6 +10,10 @@ const Header = () => {
       <Link href="/blog">
         <a className="hover:underline mx-4">Blog.</a>
       </Link>
+
+      <Link href="/novel">
+        <a className="hover:underline mx-4">Novel.</a>
+      </Link>
     </h2>
   )
 }

@@ -11,19 +11,19 @@ type Props = {
   allPosts: Post[]
 }
 
-export default function Blog({ allPosts }: Props) {
+export default function Novel({ allPosts }: Props) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
     <>
       <Layout>
         <Head>
-          <title>Blog | {SITE_NAME}</title>
+          <title>Novel | {SITE_NAME}</title>
         </Head>
         <Container>
           <section className="flex-colmd:flex-row flex items-end md:justify-between mt-16 mb-16 md:mb-12">
             <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-              Blog.
+              Novel.
             </h1>
           </section>
           {heroPost && (
@@ -44,7 +44,7 @@ export default function Blog({ allPosts }: Props) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts('_posts', ['title', 'date', 'slug', 'author', 'coverImage', 'excerpt'])
+  const allPosts = getAllPosts('_novels', ['title', 'date', 'slug', 'author', 'coverImage', 'excerpt'])
 
   return {
     props: { allPosts },

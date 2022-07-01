@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
+import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
@@ -60,7 +61,7 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug('_posts', params.slug, [
+  const post = getPostBySlug('_novels', params.slug, [
     'title',
     'date',
     'slug',
@@ -82,7 +83,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts('_posts', ['slug'])
+  const posts = getAllPosts('_novels', ['slug'])
 
   return {
     paths: posts.map((post) => {
