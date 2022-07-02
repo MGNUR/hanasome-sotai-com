@@ -68,7 +68,7 @@ const Index = ({ allPosts }: Props) => {
             ほかの人たちがそのままで存在しているのを信じることが、愛である。
           </p>
           <p className="md:text-lg leading-relaxed mb-8 text-right mx-20">
-            ――シモーユ・ヴェイヌ
+            ――シモーヌ・ヴェイユ
           </p>
         </Container>
       </Layout>
