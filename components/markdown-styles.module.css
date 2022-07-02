@@ -9,6 +9,15 @@
   @apply my-6 leading-8;
 }
 
+.markdown p,
+.markdown blockquote {
+  @apply whitespace-pre-wrap;
+}
+
+.markdown p * {
+  @apply whitespace-normal;
+}
+
 .markdown h1 {
   @apply text-4xl font-bold mt-16 mb-4 leading-snug;
 }
@@ -22,11 +31,11 @@
 }
 
 .markdown ul {
-  @apply list-disc pl-8;
+  @apply list-disc pl-4 my-1;
 }
 
 .markdown ol {
-  @apply list-decimal pl-8;
+  @apply list-decimal pl-4;
 }
 
 .markdown blockquote {

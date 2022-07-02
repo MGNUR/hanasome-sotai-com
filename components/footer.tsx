@@ -14,7 +14,7 @@ const Footer = () => {
             className="p-2 mx-3"
             target="_blank"
           >
-            <IconContext.Provider value={{ size: '3em' }}>
+            <IconContext.Provider value={{ size: '2em' }}>
               <SiPixiv />
             </IconContext.Provider>
           </a>
@@ -23,7 +23,7 @@ const Footer = () => {
             className="p-2 mx-3"
             target="_blank"
           >
-            <IconContext.Provider value={{ size: '3em' }}>
+            <IconContext.Provider value={{ size: '2em' }}>
               <SiTwitter />
             </IconContext.Provider>
           </a>
@@ -32,7 +32,7 @@ const Footer = () => {
             className="p-2 mx-3"
             target="_blank"
           >
-            <IconContext.Provider value={{ size: '3em' }}>
+            <IconContext.Provider value={{ size: '2em' }}>
               <SiHatenabookmark />
             </IconContext.Provider>
           </a>

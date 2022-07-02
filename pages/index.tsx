@@ -64,10 +64,10 @@ const Index = ({ allPosts }: Props) => {
              width={2000}
              alt="牧場"
           />
-          <p className="text-lg leading-relaxed m-4 mx-20">
+          <p className="md:text-lg leading-relaxed m-4 mx-20">
             ほかの人たちがそのままで存在しているのを信じることが、愛である。
           </p>
-          <p className="text-lg leading-relaxed mb-8 text-right mx-20">
+          <p className="md:text-lg leading-relaxed mb-8 text-right mx-20">
             ――シモーユ・ヴェイヌ
           </p>
         </Container>
