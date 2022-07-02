@@ -24,7 +24,7 @@ export default function Novel({ allPosts }: Props) {
               Novel.
             </h1>
           </section>
-          {morePosts.length > 0 && <MoreStories folder='novels' posts={morePosts} />}
+          {morePosts.length > 0 && <MoreStories folder='novels' posts={morePosts} smallFlag={false} />}
         </Container>
       </Layout>
     </>

@@ -1,8 +1,6 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-import Author from '../types/author'
 
 type Props = {
   title: string
@@ -22,20 +20,28 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
+  <div className="flex mb-5">
+    <div className="mr-4 w-20 h-20 md:w-32 md:h-32 flex-none relative flex justify-center items-center hover:shadow-lg">
+      <CoverImage
+        folder={folder}
+        slug={slug}
+        title={title}
+        src={coverImage}
+        width={350}
+        height={350}
+      />
+    </div>
     <div>
-      <div className="mr-3">
-        <CoverImage folder={folder} slug={slug} title={title} src={coverImage} width={600} height={300}/>
-      </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <p className="text-xl font-bold mb-2 leading-snug">
         <Link as={`/${folder}/${slug}`} href="/[folder]/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
-      </h3>
-      <div className="text-lg mb-4">
+      </p>
+      <div className="text-sm text-paleyYellow-dark">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
+  </div>
   )
 }
 

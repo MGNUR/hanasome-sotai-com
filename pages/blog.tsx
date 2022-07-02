@@ -24,7 +24,7 @@ export default function Blog({ allPosts }: Props) {
               Blog.
             </h1>
           </section>
-          {morePosts.length > 0 && <MoreStories folder='posts' posts={morePosts} />}
+          {morePosts.length > 0 && <MoreStories folder='posts' posts={morePosts} smallFlag={true} />}
         </Container>
       </Layout>
     </>

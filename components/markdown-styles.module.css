@@ -29,6 +29,17 @@
   @apply list-decimal pl-8;
 }
 
+.markdown blockquote {
+  @apply px-4 py-4 border dark:border-white dark:bg-gray-100 dark:bg-opacity-10;
+}
+
+.markdown blockquote p:first-child {
+  @apply mt-0;
+}
+.markdown blockquote p:last-child {
+  @apply mb-0;
+}
+
 .markdown a {
   @apply text-blue-500;
 }
