@@ -2,13 +2,13 @@ import cn from 'classnames'
 import Link from 'next/link'
 
 type Props = {
-  folder: string
   title: string
   src: string
+  folder?: string
   slug?: string
 }
 
-const CoverImage = ({ folder, title, src, slug }: Props) => {
+const CoverImage = ({ title, src, folder, slug }: Props) => {
   const image = (
     <img
       src={src}
