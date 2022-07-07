@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { SITE_NAME } from '../lib/constants'
 
 const Meta = () => {
   return (
@@ -31,8 +32,9 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      <meta property="og:title" content={ SITE_NAME } />
       <meta
-        name="description"
+        property="og:description"
         content={`花初そたいの個人サイト`}
       />
       <meta property="og:image" content="/assets/index/cover.jpg" />
