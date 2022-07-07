@@ -36,6 +36,8 @@ const Meta = () => {
         content={`花初そたいの個人サイト`}
       />
       <meta property="og:image" content="/assets/index/cover.jpg" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@hanasome_sotai" />
     </Head>
   )
 }
