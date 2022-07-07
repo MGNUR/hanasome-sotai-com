@@ -3,6 +3,7 @@ import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
+import Meta from '../../components/meta'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
@@ -30,11 +31,15 @@ const Post = ({ post, morePosts, preview }: Props) => {
         ) : (
           <>
             <article className="mb-32">
+              <Meta 
+                  title={post.title}
+                  description={post.excerpt}
+                  image={post.ogImage.url}
+              />
               <Head>
                 <title>
                   {post.title} | {SITE_NAME}
                 </title>
-                <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader
                 title={post.title}

@@ -1,7 +1,7 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
 import Image from 'next/image';
 import Layout from '../components/layout'
+import Meta from '../components/meta'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { SITE_NAME } from '../lib/constants'
@@ -20,6 +20,11 @@ const Index = ({ allPosts }: Props) => {
   return (
     <>
       <Layout>
+        <Meta 
+          title={SITE_NAME}
+          description="花初そたいの個人サイトです。"
+          image="/assets/index/cover.jpg"
+        />
         <Head>
           <title>{SITE_NAME}</title>
         </Head>

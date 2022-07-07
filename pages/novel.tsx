@@ -1,6 +1,7 @@
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import Layout from '../components/layout'
+import Meta from '../components/meta'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { SITE_NAME } from '../lib/constants'
@@ -15,6 +16,11 @@ export default function Novel({ allPosts }: Props) {
   return (
     <>
       <Layout>
+        <Meta 
+          title="Novel"
+          description="小説置場"
+          image="/assets/index/cover.jpg"
+        />
         <Head>
           <title>Novel | {SITE_NAME}</title>
         </Head>

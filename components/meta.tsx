@@ -1,7 +1,12 @@
 import Head from 'next/head'
-import { SITE_NAME } from '../lib/constants'
 
-const Meta = () => {
+type Props = {
+  title: string,
+  description: string,
+  image: string
+}
+
+const Meta = ({ title, description, image }: Props) => {
   return (
     <Head>
       <link
@@ -32,12 +37,12 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta property="og:title" content={ SITE_NAME } />
+      <meta property="og:title" content={ title } />
       <meta
         property="og:description"
-        content={`花初そたいの個人サイト`}
+        content={ description}
       />
-      <meta property="og:image" content="/assets/index/cover.jpg" />
+      <meta property="og:image" content={ image } />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@hanasome_sotai" />
     </Head>
