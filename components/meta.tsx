@@ -40,7 +40,7 @@ const Meta = ({ title, description, image }: Props) => {
       <meta property="og:title" content={ title } />
       <meta
         property="og:description"
-        content={ description}
+        content={ description }
       />
       <meta property="og:image" content={ image } />
       <meta name="twitter:card" content="summary" />
