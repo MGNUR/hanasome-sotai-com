@@ -7,7 +7,7 @@ coverImage: '/assets/novel/elephant/cover.jpg'
 date: '2023-02-09'
 author:
   name: 小林さん・トール
-  picture: '/assets/novel/genres/shinycolors.jpeg'
+  picture: '/assets/novel/genres/maidragon.jpg'
 ogImage:
   url: '/assets/novel/elephant/cover.jpg'
 ---
