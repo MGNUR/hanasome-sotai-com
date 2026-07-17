@@ -1,6 +1,7 @@
 ---
 title: 'ハテナ'
-excerpt: '八宮めぐるさんのファンの話です。　
+excerpt: 'SSF09にて頒布された、シャニマス×チャットモンチー合同『色彩』に寄稿した作品です。
+八宮めぐるさんのファンの話です。　
 
 ハテナ / チャットモンチー'
 coverImage: '/assets/novel/maison/cover.jpg'
